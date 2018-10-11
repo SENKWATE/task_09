@@ -10,6 +10,26 @@
         <a class="nav-link" href="{% url 'restaurant-create' %}">Create Restaurant</a>
       </li>
     </ul>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'signup' %}">SignUp</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'signin' %}">SignIn</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'signout' %}">SignOut</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'signout' %}">{{request.user}}</a>
+      </li>
+    </ul>
     
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" name='q' placeholder="I don't do anything">
